@@ -2,6 +2,7 @@
   <div class="home">
     <button @click="handleToken">改变token</button>
     <!-- <button @click="handleClickInterface">handleClickInterface</button> -->
+    <el-button type="primary">主要按钮</el-button>
     <div>version: {{version}}</div>
     <div>stateToken: {{token}}</div>
     <div>globalState: {{globalState}}</div>
@@ -50,7 +51,10 @@ export default class Home extends Vue {
   // mounted
   private mounted() {
     this.actionToken('mountChangeToken');
-    this.$loading({text: 'aaas'});
+    // this.$loading({text: 'aaas'});
+    // this.$message('这是一条消息提示');
+    // console.log(this.$router)
+    // console.log(this.$store.state)
   }
 
   // computed
