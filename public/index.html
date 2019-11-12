@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>test03</title>
+    <link rel="stylesheet" type="text/css" href="<%= VUE_APP_CDNPATH %>/element-ui@2.10.1/index.css">
+    <link rel="stylesheet" type="text/css" href="<%= VUE_APP_CDNPATH %>/styles/common.css">
   </head>
   <body>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="<%= VUE_APP_CDNPATH %>/vue@2.5.13/vue<% if(process.env.NODE_ENV==='production'){ %>.min<% } %>.js"></script>
+    <script type="text/javascript" src="<%= VUE_APP_CDNPATH %>/vuex@3.0.1/vuex.min.js"></script>
+    <script type="text/javascript" src="<%= VUE_APP_CDNPATH %>/vue-router@3.0.1/vue-router.min.js"></script>
+    <script type="text/javascript" src="<%= VUE_APP_CDNPATH %>/axios@0.18.0/axios.min.js"></script>
+    <script type="text/javascript" src="<%= VUE_APP_CDNPATH %>/element-ui@2.10.1/index.js"></script>
     <noscript>
       <strong>We're sorry but test03 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
   </body>
 </html>
